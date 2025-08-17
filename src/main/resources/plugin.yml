@@ -1,0 +1,21 @@
+name: Shift+F
+version: ${version}
+author: nuoxian
+main: io.earlydreamland.shift-f.Shift-F
+api-version: 1.13
+
+commands:
+  sf:
+    description: Shift+F 插件主命令
+    usage: /sf [reload|version]
+    permission: shiftf.use
+    aliases: [shiftf]
+    tab-complete: true
+
+permissions:
+  shiftf.use:
+    description: 允许使用插件命令
+    default: true
+  shiftf.reload:
+    description: 允许重载插件配置
+    default: op
