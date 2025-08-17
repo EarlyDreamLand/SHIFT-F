@@ -1,7 +1,7 @@
 name: Shift+F
 version: ${version}
 author: nuoxian
-main: io.earlydreamland.shift-f.Shift-F
+main: org.earlydreamland.shift_f.Shift-F
 api-version: 1.13
 
 commands:
