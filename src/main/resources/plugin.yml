@@ -1,13 +1,12 @@
-name: Shift+F
+name: Shift_F
 version: ${version}
 author: nuoxian
-main: org.earlydreamland.shift_f.Shift-F
+main: org.earlydreamland.shift_f.Main
 api-version: 1.13
 
 commands:
   sf:
     description: Shift+F 插件主命令
-    usage: /sf [reload|version]
     permission: shiftf.use
     aliases: [shiftf]
     tab-complete: true
