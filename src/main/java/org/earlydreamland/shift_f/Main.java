@@ -168,10 +168,12 @@ public class Main extends JavaPlugin implements Listener {
             if (rawCommand.startsWith("[player]")) {
                 String actualCmd = rawCommand.substring(8).trim()
                         .replace("{player}", player.getName());
+                getLogger().info(player.getName() + " 发出服务器命令：/" + actualCmd);
                 return player.performCommand(actualCmd);
             } else if (rawCommand.startsWith("[console]")) {
                 String actualCmd = rawCommand.substring(9).trim()
                         .replace("{player}", player.getName());
+                getLogger().info(player.getName() + " 发出控制台命令：/" + actualCmd);
                 return getServer().dispatchCommand(getServer().getConsoleSender(), actualCmd);
             }
             return false;
